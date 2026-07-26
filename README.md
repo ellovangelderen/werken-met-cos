@@ -15,7 +15,7 @@ Ello meeleest, antwoordt en werk uitvoert, binnen grenzen die Ello bepaalt.
 | [Samenwerken met de CoS](samenwerken-met-de-cos.md) | Je bent een contact van Ello en wilt weten hoe dit werkt |
 | [Wie is Ello](wie-is-ello.md) | Korte introductie van de mens achter het systeem |
 | [Het gedachtegoed](gedachtegoed.md) | Het denkmodel achter de CoS en de LeanAI-factory |
-| [Inodus-aanbod](inodus-aanbod.md) | Zoiets zelf willen? Dit is wat Inodus levert |
+| [Inodus-aanbod](inodus-aanbod.md) | Zoiets zelf willen? Dit is wat Inodus levert — zie ook [inodus.nl](https://inodus.nl) |
 | [skills/](skills/) | Hulpmiddelen om te kopiëren naar je eigen project |
 
 ## Eén ding om te onthouden
