@@ -40,7 +40,8 @@ afspraak op principaal-niveau, dan is dat één edit in de canon.
 
 ## Zelf bouwen
 
-Een uitgeklede, geanonimiseerde template-versie van mijn server komt als
-publieke repo beschikbaar; de link verschijnt hier zodra hij er is. Tot die
-tijd: het patroon is klein genoeg om na te bouwen — een handvol
-markdown-secties en een MCP-server met twee read-only tools erop.
+Een uitgeklede, geanonimiseerde template-versie van mijn server staat klaar
+om te forken: **[lo-mcp-template](https://github.com/ellovangelderen/lo-mcp-template)**.
+Zeven profiel-secties met schrijfinstructies, de server met drie read-only
+tools, en een quickstart voor stdio (lokaal) of HTTP (remote, zet er dan
+echte toegangscontrole voor).
