@@ -26,10 +26,13 @@ HARDE REGELS:
 
 ## Stap 0: hoeft het wel via de CoS?
 
-Cijfers die een MCP van dit project al levert (bij trainer-ASC: renners,
-ritten, weekplan, compliance, vorm via de wattzegtrob-MCP) haal je daar,
-zonder verzoek. Alleen wat je daar niet krijgt (ruwe tabellen, host-logs,
-deploy-status, code-wijzigingen aan Ello's kant) gaat via /cos-vraag.
+Data uit je eigen app haal je ZELF, zonder verzoek: apps op het Inodus-
+platform hebben een MCP met `schema()` en `sql_lezen(query)` (technisch
+read-only; jouw applicatie en data, jouw toegang). Is die MCP in deze sessie
+gekoppeld, gebruik die voor elke meting/analyse/export; het type `meting`
+hieronder is alleen het terugvalpad als de MCP (nog) niet gekoppeld is. Alleen
+wat je daar niet krijgt (host-logs, deploy-status, storing, code-wijzigingen
+aan Ello's kant) gaat via /cos-vraag.
 
 ## Stap 1: kies het vraagtype
 
