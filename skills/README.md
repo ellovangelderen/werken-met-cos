@@ -5,10 +5,14 @@ gedeeld is.
 
 ## /cos-vraag
 
-Een skill die met de context van je eigen project een beslisklare vraag voor
-de CoS bouwt: wat, waar, wat je zag, wat je al checkte. Het resultaat stuur
-je zelf via WhatsApp; de CoS pakt zo'n vraag vrijwel altijd zonder
-heen-en-weer op.
+Een skill die met de context van je eigen project een verzoek voor de CoS
+bouwt in de vaste vorm die de CoS machinaal herkent: eerste regel
+`CoS-verzoek: meting | onderzoek | storing | fix`, dan `Repo:`, dan
+wat/waarom/context/wat je al checkte. `meting` = cijfers uit de
+productie-DB (je levert zelf één SELECT, de CoS draait die read-only),
+`onderzoek` = read-only kijken in code/logs/deploy, `storing` = iets doet
+het nu niet, `fix` = een afgebakende code-wijziging als PR. Het resultaat
+stuur je zelf via WhatsApp; het antwoord komt in dezelfde chat terug.
 
 **Installeren:** kopieer de map [`cos-vraag/`](cos-vraag/) naar
 `.claude/skills/cos-vraag/` in je eigen repo. Daarna werkt
