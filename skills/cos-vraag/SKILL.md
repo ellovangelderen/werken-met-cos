@@ -41,7 +41,7 @@ aan Ello's kant) gaat via /cos-vraag.
 | `meting` | je wilt cijfers uit de productie-DB, alleen lezen | draait jouw SELECT via een read-only wrapper (sqlite `mode=ro`, één statement, max 500 rijen) en stuurt de uitkomst terug | vertrouwd contact: automatisch, ~20 min; anders na Ello's akkoord |
 | `onderzoek` | je wilt dat iemand aan Ello's kant read-only kijkt: code, logs, deploy, monitoring | start een read-only onderzoek in de juiste repo/host, antwoord met bewijs | vertrouwd contact: automatisch, ~20 min; anders na Ello's akkoord |
 | `storing` | iets doet het niet, nu | start direct een read-only storingscheck (versie, logs, hypothese) | direct, minuten |
-| `fix` | je wilt een afgebakende code-wijziging | bouwt op een eigen branch, opent een PR met bewijs; mergen doet Ello | na Ello's akkoord |
+| `fix` | je wilt een afgebakende code-wijziging | bouwt op een eigen branch en opent een PR met bewijs; die PR mergt vanzelf zodra de checks groen zijn, tenzij hij de veiligheidskern raakt | starten na Ello's akkoord, daarna vanzelf |
 
 Twijfel tussen `onderzoek` en `storing`: is er nu een gebruiker die iets niet
 kan, dan `storing`; anders `onderzoek`. Twijfel tussen `meting` en
@@ -67,7 +67,7 @@ verplicht en letterlijk in deze vorm; de CoS routeert erop:
 
 ```
 CoS-verzoek: <meting|onderzoek|storing|fix>
-Repo: <trainer_asc|wattzegtrob|cos|...>
+Repo: <naam van de repo of dienst>
 
 Wat: [in één zin wat je wilt weten of gedaan wilt hebben]
 Waarom: [één zin: welke beslissing of bouwstap hangt eraan]
@@ -80,41 +80,42 @@ Zelf al gecheckt: [wat je hebt uitgesloten of geprobeerd]
 [fix]      Issue: #nn of exacte omschrijving. Acceptatie: [wanneer is het klaar]
 ```
 
-`Repo:` is de repo/dienst aan Ello's kant waar het over gaat, in de naam die
-Ello gebruikt (bij dit project: `trainer_asc` voor de trainer-app en de
-productie-DB, `wattzegtrob` voor de portal/site, `cos` voor de CoS zelf).
-Weet je het niet, laat de regel staan met je beste gok; de CoS corrigeert.
+`Repo:` is de repo of dienst aan Ello's kant waar het over gaat, in de naam die
+Ello ervoor gebruikt. Werk je in een gedeeld project, dan is dat meestal de
+repo-naam die je zelf voor je ogen hebt; `cos` is de CoS zelf. Weet je het
+niet, laat de regel staan met je beste gok; de CoS corrigeert.
 
 Houd het onder ~1500 tekens; de CoS neemt de tekst letterlijk mee als
 opdracht, dus alles wat er niet in staat, weet de uitvoerder niet. Weglaten
 wat er niet is; schrijf in de taal van de gebruiker.
 
-Voorbeeld `meting` (trainer-ASC, tijd-as meetpunten):
+Voorbeeld `meting`:
 
 ```
 CoS-verzoek: meting
-Repo: trainer_asc
+Repo: <jouw-repo>
 
-Wat: per bron (strava/fit) het gat tussen gemelde ritduur en aantal meetpunten.
-Waarom: de grafiek "Verloop van de rit" zet elk meetpunt op 1 seconde; klopt dat bij Strava?
-Context: uploads.duration_min, load_records.power_series_json (JSON-lijst per seconde), api/lib/load.py
-Zelf al gecheckt: lokaal 0 ritten, alleen prod kan dit beantwoorden.
-Query: SELECT u.file_type AS bron, COUNT(*) AS n, ROUND(AVG(u.duration_min*60 - json_array_length(l.power_series_json)),0) AS gem_gat_s FROM uploads u LEFT JOIN load_records l ON l.upload_id=u.id WHERE u.deleted_at IS NULL AND l.power_series_json IS NOT NULL GROUP BY u.file_type
-Terug: de tabel plus de 5 grootste uitschieters per bron.
+Wat: per abonnementsvorm het aantal actieve accounts en de gemiddelde looptijd.
+Waarom: we willen weten of het jaarplan het maandplan verdringt voor we de prijzen aanpassen.
+Context: accounts.plan, accounts.created_at, accounts.cancelled_at, app/models/account.py
+Zelf al gecheckt: lokaal staan alleen testaccounts, alleen prod kan dit beantwoorden.
+Query: SELECT plan, COUNT(*) AS n, ROUND(AVG(julianday(COALESCE(cancelled_at,'now')) - julianday(created_at)),0) AS gem_dagen FROM accounts WHERE deleted_at IS NULL GROUP BY plan
+Terug: de tabel plus het aantal opzeggingen van de laatste 30 dagen.
 ```
 
 ## Stap 4: lever af
 
 Toon het bericht in één blok om te kopiëren en sluit af met precies deze
 instructie: "Kopieer dit en stuur het via WhatsApp naar de CoS (het nummer
-van Ello). Je krijgt het antwoord in dezelfde chat terug; een `fix` komt als
-PR-link zodra Ello akkoord is."
+van Ello). Je krijgt het antwoord in dezelfde chat terug; bij een `fix` krijg
+je de PR-link zodra Ello de opdracht heeft goedgekeurd."
 
 ## Waarom dit werkt
 
 De CoS leest de eerste regel (`CoS-verzoek: <type>`) machinaal en zet het
 verzoek op de bijbehorende baan: `meting` en `onderzoek` draaien read-only en
 automatisch voor vertrouwde contacten, `storing` start direct, `fix` wacht op
-Ello's akkoord. De rest van je tekst gaat letterlijk mee als opdracht. Hoe
-concreter (wat/waarom/context/query), hoe groter de kans dat het in één keer
-goed gaat en je zonder tussenstappen de uitkomst krijgt.
+Ello's akkoord om te beginnen (daarna mergt de PR op groene checks vanzelf;
+Ello kan hem tot dat moment sluiten). De rest van je tekst gaat letterlijk mee
+als opdracht. Hoe concreter (wat/waarom/context/query), hoe groter de kans dat
+het in één keer goed gaat en je zonder tussenstappen de uitkomst krijgt.

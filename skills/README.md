@@ -14,6 +14,10 @@ productie-DB (je levert zelf één SELECT, de CoS draait die read-only),
 het nu niet, `fix` = een afgebakende code-wijziging als PR. Het resultaat
 stuur je zelf via WhatsApp; het antwoord komt in dezelfde chat terug.
 
+`meting` is bewust het terugvalpad: data uit je eigen app haal je sneller zelf
+via de app-MCP (`schema()` en `sql_lezen()`), zoals stap 0 van de skill
+uitlegt. Alleen wat daar niet in zit gaat via een verzoek.
+
 **Installeren:** kopieer de map [`cos-vraag/`](cos-vraag/) naar
 `.claude/skills/cos-vraag/` in je eigen repo. Daarna werkt
 `/cos-vraag <onderwerp>` in Claude Code.
