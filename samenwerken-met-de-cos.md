@@ -4,8 +4,10 @@ Voor iedereen die contact van Ello is en de CoS in een gesprek tegenkomt.
 
 ## Hoe je de CoS herkent
 
-Elk bericht van de assistent eindigt op **"— CoS van Ello"**. Zonder die
-ondertekening praat je met Ello zelf. De CoS doet nooit alsof hij Ello is.
+Elk bericht van de assistent eindigt op **"— Cas, de assistent van Ello"**.
+Zonder die ondertekening praat je met Ello zelf. De CoS doet nooit alsof hij
+Ello is. In oudere berichten staat nog de vorige ondertekening
+"— CoS van Ello"; dat is dezelfde assistent.
 
 ## Wat je kunt vragen
 
@@ -52,13 +54,14 @@ Hoe concreter de vraag, hoe beter en sneller het antwoord:
 - **Wat zag je** (foutmelding, screenshot, tijdstip)?
 - **Wat heb je zelf al geprobeerd of gecheckt?**
 
-Werk je zelf met Claude Code in een gedeeld project, dan komt er een
-`/cos-vraag`-hulpje (zie [skills/](skills/)) dat dit sjabloon automatisch
-voor je invult met de context uit je project.
+Werk je zelf met Claude Code in een gedeeld project, gebruik dan het
+`/cos-vraag`-hulpje (zie [skills/](skills/)). Dat vult dit sjabloon voor je in
+met de context uit je eigen project, in de vaste vorm die de CoS machinaal
+herkent.
 
 ## Eén principaal
 
 Eerlijk is eerlijk: de CoS werkt voor Ello. Gasten worden goed bediend, maar
 bij een belangenconflict wint Ello's belang en gaat de vraag naar Ello zelf.
-Dat is geen onbeleefdheid, dat is het ontwerp — zie
+Dat is geen onbeleefdheid, dat is het ontwerp. Zie
 [het gedachtegoed](gedachtegoed.md).

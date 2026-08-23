@@ -2,7 +2,7 @@
 
 **Van wie:** het onderliggende protocol (MCP, Model Context Protocol) is in
 november 2024 door Anthropic geïntroduceerd en open-sourced. De toepassing
-hier — je persoonlijke "zo werk je met mij"-handleiding als MCP-server — is
+hier, je persoonlijke "zo werk je met mij"-handleiding als MCP-server, is
 mijn eigen bouwsel.
 
 ## Het probleem
@@ -18,7 +18,7 @@ kwaliteitskiller van persoonlijke AI.
 Eén canoniek **principaal-profiel**: identiteit, communicatiestijl, harde
 regels, routines. Dat profiel leeft op één plek en wordt via een kleine
 MCP-server (`get_profile`, `get_section`) aan élk oppervlak geserveerd. Elke
-sessie — interactief of headless — begint met het laden van het profiel en
+sessie, interactief of headless, begint met het laden van het profiel en
 werkt daarna volgens dezelfde handleiding.
 
 Wat het oplevert:

@@ -1,7 +1,7 @@
 # Agent-tips
 
 Concepten die het werken met AI-agents dragen, met per concept: wat het is,
-van wie het komt, en hoe ik het zelf gebruik. Geen theorie om de theorie —
+van wie het komt, en hoe ik het zelf gebruik. Geen theorie om de theorie:
 alles hier draait dagelijks in mijn eigen systemen.
 
 | Concept | Kern |

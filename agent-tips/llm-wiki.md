@@ -8,10 +8,10 @@
 Een manier om met een LLM een **blijvende, groeiende kennisbank** te bouwen in
 plaats van elke sessie opnieuw documenten te doorzoeken. Drie lagen:
 
-1. **Bronnen** — onveranderbaar ruw materiaal (artikelen, gesprekken, logs).
-2. **De wiki** — markdown-pagina's die de LLM onderhoudt: samenvattingen,
+1. **Bronnen**, het onveranderbare ruwe materiaal (artikelen, gesprekken, logs).
+2. **De wiki**, de markdown-pagina's die de LLM onderhoudt: samenvattingen,
    inzichten en kruisverwijzingen, cumulatief bijgewerkt per nieuwe bron.
-3. **Een schema** — de vaste werkstromen: *ingest* (nieuwe bron verwerken),
+3. **Een schema**, de vaste werkstromen: *ingest* (nieuwe bron verwerken),
    *query* (vragen beantwoorden tegen de wiki), *lint* (gezondheidscheck op
    verouderde claims en drift).
 
@@ -32,7 +32,7 @@ Mijn Chief of Staff is in de kern een LLM Wiki over mijn werkende leven:
 - **Bronnen:** de berichten-, mail- en agenda-feeds die het systeem
   read-only meeleest.
 - **Wiki:** dossiers per contact en per onderwerp die de assistent zelf
-  bijhoudt — wie iemand is, wat er loopt, wat er is toegezegd. Elke
+  bijhoudt: wie iemand is, wat er loopt, wat er is toegezegd. Elke
   interactie maakt het dossier rijker; niets hoeft twee keer uitgelegd.
 - **Lint:** nachtelijke en wekelijkse opruim- en leerrondes die verouderde
   taken sluiten, dubbelingen samenvoegen en lessen terugschrijven in de

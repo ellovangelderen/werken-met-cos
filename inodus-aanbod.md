@@ -1,7 +1,7 @@
 # Het Inodus-aanbod
 
-*Geredigeerd en akkoord Ello, 2026-07-04. Bron: inodus.nl (publieke
-website-content).*
+*Geredigeerd en akkoord Ello, 2026-07-04; aanvulling akkoord Ello 2026-07-28
+(Start met Claude + cases). Bron: inodus.nl (publieke website-content).*
 
 Inodus is een AI-native software factory. Ello bouwt werkende software in dagen,
 niet maanden, en leert mensen en organisaties hoe ze dat zelf doen. Van een
@@ -41,11 +41,19 @@ vaste sparringpartner die dagelijks voor de troepen uit loopt en jou bijpraat,
 scherp houdt en de juiste richting helpt kiezen. Wat is echt, wat is ruis, wat
 moet je deze maand begrijpen en wat kun je laten liggen.
 
+## Gratis instap: Start met Claude
+
+Een gecureerd leerpad op https://inodus.nl/start-met-claude/ met de beste
+hands-on Claude-trainingen, video's en podcasts, op niveau geordend: van de
+begrippen (modellen, agents, MCP, skills) tot complexe projecten, specifieke
+onderwerpen en de commerciële kant.
+
 ## In de praktijk
 
 Hoe dit eruitziet als het draait staat op https://inodus.nl/hoe-het-werkt/: de
 publieke pagina over Ello's eigen Chief of Staff (het trust-model, gasten, en de
-grenzen).
+grenzen). Concrete gebouwde producten staan op https://inodus.nl/cases/
+(o.a. Tourpoule, Watt zegt Rob en TrendSein/PREV).
 
 ## Contact
 
