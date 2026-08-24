@@ -7,8 +7,9 @@ gedeeld is.
 
 Een skill die met de context van je eigen project een verzoek voor de CoS
 bouwt in de vaste vorm die de CoS machinaal herkent: eerste regel
-`CoS-verzoek: meting | onderzoek | storing | fix`, dan `Repo:`, dan
-wat/waarom/context/wat je al checkte. `meting` = cijfers uit de
+`CoS-verzoek: meting | onderzoek | storing | fix` (precies deze vier, er is
+geen vijfde), dan `Repo:`, dan wat/waarom/context/wat je al checkte.
+`meting` = cijfers uit de
 productie-DB (je levert zelf één SELECT, de CoS draait die read-only),
 `onderzoek` = read-only kijken in code/logs/deploy, `storing` = iets doet
 het nu niet, `fix` = een afgebakende code-wijziging als PR. Het resultaat

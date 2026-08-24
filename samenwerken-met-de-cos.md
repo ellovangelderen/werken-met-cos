@@ -29,6 +29,12 @@ Ello is. In oudere berichten staat nog de vorige ondertekening
 3. Vraagt het een beslissing van Ello, dan legt de CoS het aan hem voor en
    zegt hij dat eerlijk. "Dat beslist Ello" is een echt antwoord, geen
    afschuifformule.
+4. Hapert er iets aan Ello's kant, dan zegt de CoS liever niets dan iets
+   halfs: het antwoordpad gaat dan in zijn geheel dicht, ook voor een "ik kom
+   er zo op terug". Je bericht is niet weg en Ello ziet het gewoon, er gebeurt
+   alleen even niets automatisch. Hij krijgt er een alarm van zodra het speelt.
+   Hoor je onverwacht niets terwijl je een antwoord verwachtte, app hem dan
+   direct.
 
 ## Wat de CoS nooit doet
 
