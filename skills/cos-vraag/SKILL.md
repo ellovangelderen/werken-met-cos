@@ -47,6 +47,15 @@ Twijfel tussen `onderzoek` en `storing`: is er nu een gebruiker die iets niet
 kan, dan `storing`; anders `onderzoek`. Twijfel tussen `meting` en
 `onderzoek`: kun je het als SELECT schrijven, dan `meting`.
 
+Het zijn er **precies vier, er is geen vijfde**. Verzin er nooit een bij, ook
+niet als een andere naam logischer klinkt: de CoS herkent alleen deze vier, en
+een onbekend type valt terug op raden. Dat raden is precies wat deze vaste vorm
+moest voorkomen.
+
+Weet je alleen de gewenste **uitkomst** en niet welke wijziging daarvoor nodig
+is, gebruik dan `fix` en zet die uitkomst in de `Acceptatie:`-regel. Ello kiest
+aan zijn kant hoe dat wordt opgepakt; die keuze is niet aan de aanvrager.
+
 ## Stap 2: verzamel context uit de repo
 
 Wat het antwoord sneller maakt: het relevante bestand of de module (pad +
