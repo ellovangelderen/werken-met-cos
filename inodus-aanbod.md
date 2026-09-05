@@ -1,7 +1,8 @@
 # Het Inodus-aanbod
 
 *Geredigeerd en akkoord Ello, 2026-07-04; aanvulling akkoord Ello 2026-07-28
-(Start met Claude + cases). Bron: inodus.nl (publieke website-content).*
+(Start met Claude + cases); aanvulling akkoord Ello 2026-08-26 (contact via
+/cos/, agent.inodus.nl). Bron: inodus.nl (publieke website-content).*
 
 Inodus is een AI-native software factory. Ello bouwt werkende software in dagen,
 niet maanden, en leert mensen en organisaties hoe ze dat zelf doen. Van een
@@ -55,6 +56,15 @@ publieke pagina over Ello's eigen Chief of Staff (het trust-model, gasten, en de
 grenzen). Concrete gebouwde producten staan op https://inodus.nl/cases/
 (o.a. Tourpoule, Watt zegt Rob en TrendSein/PREV).
 
+Sinds augustus 2026 is inodus.nl ook zelf agent-bevraagbaar: op
+https://agent.inodus.nl draait een publieke MCP-server waarmee
+AI-assistenten de site kunnen doorzoeken, pagina's en de FAQ kunnen lezen,
+een vraag aan de CoS kunnen stellen en een bericht kunnen achterlaten.
+Niveau 3, bevraagbaar, op de agent-ready-ladder die Inodus zelf hanteert;
+wie wil zien wat dat betekent, sluit er zijn eigen assistent direct op aan.
+
 ## Contact
 
-Via inodus.nl, of rechtstreeks bij Ello.
+De voordeur is de publieke CoS op https://inodus.nl/cos/: stel je vraag in
+de chat en je krijgt direct antwoord over het aanbod en de werkwijze. Het is
+meteen een demo van wat Inodus bouwt. Liever mailen kan ook, via inodus.nl.
