@@ -26,10 +26,10 @@ HARDE REGELS:
 
 ## Stap 0: hoeft het wel via de CoS?
 
-Data uit je eigen app haal je ZELF, zonder verzoek: apps op het Inodus-
-platform hebben een MCP met `schema()` en `sql_lezen(query)` (technisch
-read-only; jouw applicatie en data, jouw toegang). Is die MCP in deze sessie
-gekoppeld, gebruik die voor elke meting/analyse/export; het type `meting`
+Data uit je eigen app haal je ZELF, zonder verzoek: als samenwerker krijg je
+veilige alleen-lezen toegang tot je data via de MCP van je app (jouw applicatie
+en data, jouw login). Is die MCP in deze sessie gekoppeld, gebruik die voor
+elke meting/analyse/export; het type `meting`
 hieronder is alleen het terugvalpad als de MCP (nog) niet gekoppeld is. Alleen
 wat je daar niet krijgt (host-logs, deploy-status, storing, code-wijzigingen
 aan Ello's kant) gaat via /cos-vraag.
@@ -38,7 +38,7 @@ aan Ello's kant) gaat via /cos-vraag.
 
 | type | wanneer | wat de CoS doet | wanneer antwoord |
 |---|---|---|---|
-| `meting` | je wilt cijfers uit de productie-DB, alleen lezen | draait jouw SELECT via een read-only wrapper (sqlite `mode=ro`, één statement, max 500 rijen) en stuurt de uitkomst terug | vertrouwd contact: automatisch, ~20 min; anders na Ello's akkoord |
+| `meting` | je wilt cijfers uit de productie-DB, alleen lezen | draait jouw SELECT alleen-lezend en stuurt de uitkomst terug | vertrouwd contact: automatisch, ~20 min; anders na Ello's akkoord |
 | `onderzoek` | je wilt dat iemand aan Ello's kant read-only kijkt: code, logs, deploy, monitoring | start een read-only onderzoek in de juiste repo/host, antwoord met bewijs | vertrouwd contact: automatisch, ~20 min; anders na Ello's akkoord |
 | `storing` | iets doet het niet, nu | start direct een read-only storingscheck (versie, logs, hypothese) | direct, minuten |
 | `fix` | je wilt een afgebakende code-wijziging | bouwt op een eigen branch en opent een PR met bewijs; die PR mergt vanzelf zodra de checks groen zijn, tenzij hij de veiligheidskern raakt | starten na Ello's akkoord, daarna vanzelf |
