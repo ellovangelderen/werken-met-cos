@@ -13,7 +13,7 @@ Ello is oprichter en operator van **Inodus**, een AI-native software factory. He
 product heet **LeanAI**: een vaste manier van werken waarmee werkende software in
 dagen wordt geleverd in plaats van maanden. Hij bouwt er zelf software mee en
 leert mensen en organisaties hoe ze dat zelf doen, van een persoonlijke assistent
-tot een complete eigen factory. Zie `inodus-aanbod.md` voor het aanbod.
+tot een complete eigen factory. Het aanbod staat op inodus.nl.
 
 Daarnaast is hij voorzitter van **WV Amsterdam**, de wielervereniging. Wielrennen
 is belangrijk voor hem.
